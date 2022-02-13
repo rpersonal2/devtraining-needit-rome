@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Send a 'GET' request to '/api/x_58872_needit/needit_api/nigetinfo/fred.luddy'</description>
+        <display_name>Send REST Request - Inbound</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 18:00:12</sys_created_on>
+        <sys_id>d2648b2e076101102bdcfbbf7c1ed048</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Send REST Request - Inbound</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_atf_step_d2648b2e076101102bdcfbbf7c1ed048</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-13 14:53:01</sys_updated_on>
+        <table/>
+        <test display_value="Scripted API Test 1">8ef2432e076101102bdcfbbf7c1ed0c3</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=d2648b2e076101102bdcfbbf7c1ed048"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 18:00:12</sys_created_on>
+        <sys_id>1a64076e076101102bdcfbbf7c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 18:00:12</sys_updated_on>
+        <value>/api/x_58872_needit/needit_api/nigetinfo/fred.luddy</value>
+        <variable display_value="Path">50bff9250b3222000b7da95e93673a9b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 18:00:12</sys_created_on>
+        <sys_id>5664076e076101102bdcfbbf7c1ed067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 18:00:12</sys_updated_on>
+        <value/>
+        <variable display_value="Basic authentication">020a6af09fd32200ef4afa7dc67fcfec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 18:00:12</sys_created_on>
+        <sys_id>5664076e076101102bdcfbbf7c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 18:00:12</sys_updated_on>
+        <value/>
+        <variable display_value="Body">81e042650b3222000b7da95e93673aa2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 18:00:12</sys_created_on>
+        <sys_id>9264076e076101102bdcfbbf7c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 18:00:12</sys_updated_on>
+        <value>get</value>
+        <variable display_value="Method">59877da10b3222000b7da95e93673a56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 18:00:12</sys_created_on>
+        <sys_id>da64076e076101102bdcfbbf7c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 18:00:12</sys_updated_on>
+        <value>{"ni_query":"active=true"}</value>
+        <variable display_value="Query Parameters">58408e250b3222000b7da95e93673a5c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 18:00:12</sys_created_on>
+        <sys_id>de64076e076101102bdcfbbf7c1ed067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 18:00:12</sys_updated_on>
+        <value>{"Content-Type":"application/json","Accept":"application/json"}</value>
+        <variable display_value="Headers">cec002650b3222000b7da95e93673aae</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f^id=d2648b2e076101102bdcfbbf7c1ed048"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>e82b026adb39045491232f17d496195a</instance_id>
+        <instance_name>dev96335</instance_name>
+        <name>sys_atf_step_d2648b2e076101102bdcfbbf7c1ed048</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Send a 'GET' request to '/api/x_58872_needit/needit_api/nigetinfo/fred.luddy'</description><display_name>Send REST Request - Inbound</display_name><inputs/><mugshots_cache_json/><notes/><order>2</order><snapshot/><step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-11 18:00:12</sys_created_on><sys_id>d2648b2e076101102bdcfbbf7c1ed048</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Send REST Request - Inbound</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_atf_step_d2648b2e076101102bdcfbbf7c1ed048</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-13 14:53:01</sys_updated_on><table/><test display_value="Scripted API Test 1">8ef2432e076101102bdcfbbf7c1ed0c3</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=d2648b2e076101102bdcfbbf7c1ed048"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key><order>2</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-11 18:00:12</sys_created_on><sys_id>1a64076e076101102bdcfbbf7c1ed068</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-11 18:00:12</sys_updated_on><value>/api/x_58872_needit/needit_api/nigetinfo/fred.luddy</value><variable display_value="Path">50bff9250b3222000b7da95e93673a9b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key><order>0</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-11 18:00:12</sys_created_on><sys_id>5664076e076101102bdcfbbf7c1ed067</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-11 18:00:12</sys_updated_on><value/><variable display_value="Basic authentication">020a6af09fd32200ef4afa7dc67fcfec</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key><order>5</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-11 18:00:12</sys_created_on><sys_id>5664076e076101102bdcfbbf7c1ed068</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-11 18:00:12</sys_updated_on><value/><variable display_value="Body">81e042650b3222000b7da95e93673aa2</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-11 18:00:12</sys_created_on><sys_id>9264076e076101102bdcfbbf7c1ed068</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-11 18:00:12</sys_updated_on><value>get</value><variable display_value="Method">59877da10b3222000b7da95e93673a56</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key><order>3</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-11 18:00:12</sys_created_on><sys_id>da64076e076101102bdcfbbf7c1ed068</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-11 18:00:12</sys_updated_on><value>{"ni_query":"active=true"}</value><variable display_value="Query Parameters">58408e250b3222000b7da95e93673a5c</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>d2648b2e076101102bdcfbbf7c1ed048</document_key><order>4</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-11 18:00:12</sys_created_on><sys_id>de64076e076101102bdcfbbf7c1ed067</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-11 18:00:12</sys_updated_on><value>{"Content-Type":"application/json","Accept":"application/json"}</value><variable display_value="Headers">cec002650b3222000b7da95e93673aae</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f^id=d2648b2e076101102bdcfbbf7c1ed048"/></record_update>]]></payload>
+        <payload_hash>-1914121747</payload_hash>
+        <record_name>Send REST Request - Inbound</record_name>
+        <reverted_from/>
+        <source>32565e0107e901102bdcfbbf7c1ed08a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-13 14:53:01</sys_created_on>
+        <sys_id>08cca45b072101102bdcfbbf7c1ed09c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ef392a7e00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-13 14:53:01</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>48cc605b70210110042bf2a4c2a40975</update_guid>
+        <update_guid_history>48cc605b70210110042bf2a4c2a40975:-1914121747,1345c3aef0610110813f4797818325c2:158462124,5c15cf6ea96101105cf3b3b478dad2dc:-1914121747,ee64076e236101104f8d9262caa14e6a:158462124</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-13 15:10:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>05bcd3615f244f7b831530e3cbc07071</sys_id>
+        <sys_metadata>d2648b2e076101102bdcfbbf7c1ed048</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send REST Request - Inbound</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_atf_step_d2648b2e076101102bdcfbbf7c1ed048</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_d2648b2e076101102bdcfbbf7c1ed048">08cca45b072101102bdcfbbf7c1ed09c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-13 15:10:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

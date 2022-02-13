@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_58872_needit/needit_api/nigetinfo/create</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>ni_posttask</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	// Process NeedIt Task Post Request
+	var requestBody = request.body;
+	var requestData = requestBody.data;
+	
+	if(requestData instanceof Array)
+	{
+		//test for multiple body objects / JSON To-do loop through incoming object?
+		u_requested_for = requestData[0].u_requested_for;
+		u_requested_for_email = requestData[0].u_requested_for_email;
+		u_request_type = requestData[0].u_request_type;
+		u_what_needed = requestData[0].u_what_needed;
+		u_when_needed = requestData[0].u_when_needed;
+		short_description = requestData[0].short_description;
+
+	}
+	else
+	{
+		u_requested_for = requestData.u_requested_for;
+		u_requested_for_email = requestData.u_requested_for_email;
+		u_request_type = requestData.u_request_type;
+		u_what_needed = requestData.u_what_needed;
+		u_when_needed = requestData.u_when_needed;	
+		short_description = requestData.short_description;
+	}
+	
+	
+	
+	//Create Needit Task
+	var needitSysID = '';
+	try
+	{	
+		var needit = new GlideRecord('x_58872_needit_needit');
+		needit.initialize(); 
+		needit.u_requested_for = u_requested_for; 
+		needit.u_requested_for_email = u_requested_for_email; 
+		needit.u_request_type = u_request_type; 
+		needit.u_what_needed = u_what_needed; 
+		needit.u_when_needed = u_when_needed; 
+		needit.short_description = short_description; 
+	
+		//do it	and grab sys_id
+		needitSysID = needit.insert();
+	} 
+	catch(e)
+	{
+		var error =  new sn_ws_err.ServiceError();
+		error.setStatus(500);
+		error.setDetail("Create Record Failed");
+		error.setMessage("Failed to create:" + short_description);
+		
+		gs.log("Failed to create Needit Task: " + e.message);
+	
+		return error;
+	}
+	
+	//Loookup newely created Needit Task so we can send it back in the response
+	var taskNumber = '';
+	try
+	{
+		var grlu = new GlideRecord('x_58872_needit_needit');
+		grlu.initialize();
+		grlu.addQuery('sys_id','=',needitSysID);
+		grlu.query();
+
+		if(grlu.next())
+		{
+			var taskNum = {"NeedIt Task: " : grlu.number};
+			return taskNum;
+		}
+		else
+		{
+			response.body('A New Needit Task, number ' + taskNum + ' has been created');
+			response.setStatus(201);
+			return needitSysID;
+		}
+	}
+	catch(e)
+	{
+		var error2 =  new sn_ws_err.ServiceError();
+		error2.setStatus(500);
+		error2.setDetail("Failed to find newely created Needit Task");
+		
+		gs.log("Failed to find sys_id: " + needitSysID + " : " + e.message);
+	
+		return error;
+	}
+	
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_58872_needit/v1/needit_api/nigetinfo/create</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/nigetinfo/create</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-13 17:24:36</sys_created_on>
+        <sys_id>344f4d9307a101102bdcfbbf7c1ed088</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ni_posttask</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ws_operation_344f4d9307a101102bdcfbbf7c1ed088</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-13 17:57:00</sys_updated_on>
+        <web_service_definition display_value="NeedIt API">f7f6d28107e901102bdcfbbf7c1ed0f2</web_service_definition>
+        <web_service_version display_value="v1">87703e2a072101102bdcfbbf7c1ed064</web_service_version>
+    </sys_ws_operation>
+</record_update>
